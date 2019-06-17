@@ -60,7 +60,7 @@ tripsAndDip <- function(counts, h, eps, min_reads = 30, min_loci = 15, binom_p_v
 		n <- n[n >= min_reads]
 		# determine if enough loci
 		if (length(n) < min_loci){
-			return(NA)
+			return(c(NA, length(n)))
 		}
 		
 		k <- mapply(max, count1, count2)
@@ -88,7 +88,7 @@ tripsAndDip <- function(counts, h, eps, min_reads = 30, min_loci = 15, binom_p_v
 		prob_dip <- prob_dip[binom_results]
 		# determine if enough loci
 		if (length(n) < min_loci){
-			return(NA)
+			return(c(NA, length(n)))
 		}
 		
 		#calculate log likelihoods
