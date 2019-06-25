@@ -18,6 +18,9 @@ python tripsAndDip_mass.py [options described below] <br/>
 
  <br/> <br/> <br/> <br/>
  Instructions for using the R function   <br/>
+ Note: an R package containing this function is in the repository "tripsAndDipR" <br/>
+ It can be installed using: <br/>
+      devtools::install_github("delomast/tripsAndDipR") <br/>
  Input <br/>
  counts is either a matrix or a dataframe with each row corresponding to a different sample <br/>
  the columns correspond to the read counts for each locus, in a two column per locus format <br/>
